@@ -22,7 +22,7 @@ const GameList: React.FC<GameListProps> = ({games, isLoading, fetchGames}) => {
           fetchGames();
         }}
         renderItem={({item}) => <GameItem game={item} />}
-        keyExtractor={item => item.id.toString()}
+        keyExtractor={item => item.id.toString()} 
         contentContainerStyle={styles.list}
         showsVerticalScrollIndicator={true}
       />

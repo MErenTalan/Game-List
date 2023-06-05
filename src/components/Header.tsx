@@ -93,7 +93,7 @@ const Header: React.FC<HeaderProps> = ({title, filters, onFilterChange}) => {
         style={[
           styles.sortByButton,
           filters.sortBy === item && styles.activeSortByButton,
-        ]}
+        ]} 
         onPress={() => handleSortByChange(item)}>
         <Text style={styles.sortByButtonText}>
           {capitalizeFirstLetter(item).replace('-', ' ')}
